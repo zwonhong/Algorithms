@@ -1,0 +1,6 @@
+SweetNap(Task[], number of task)
+	for i <- 0 to (number of task)
+		scan input
+		do Task[i-1].End - Task[i].Start
+		do Max Update
+	print output
