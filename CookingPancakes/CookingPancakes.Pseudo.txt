@@ -1,0 +1,8 @@
+Pancakes(pancake[], n)
+	scan input
+	for i <- 0 to n
+		find Max(i to n)
+		if Max position = pancake[0]
+		if Max position = pancake[n-1] flip(1)
+		if Max position = pancake[1]~pancake[n-2] flip(Max) flip(1)
+	print output
