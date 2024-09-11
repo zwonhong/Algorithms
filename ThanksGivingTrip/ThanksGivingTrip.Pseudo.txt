@@ -1,0 +1,11 @@
+ThanksGivingTrip(cost[], n) {
+	scan input
+	while(n != 0) {
+		for i <- 0 to n
+			sum += cost[i]
+		avg = sum / n
+		for j <- 0 to n
+			if (cost[i] < avg) totalspent += (avg - cost[i])
+	} (repeat and save)
+	print output
+}

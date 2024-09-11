@@ -1,0 +1,44 @@
+A group of students are members of a club that travels annually to different
+locations during the long Thanksgiving holidays. This holiday, they are
+planning a trip to Jeju-do
+The group agrees in advance to share expenses equally, but it is not practical
+things, such as meals, hotels, taxi rides, and plane tickets
+After the trip, each student’s expenses are tallied, and money is exchanged
+so that the net cost to each is the same, to within 10 won. In the past, these
+money exchanges have been tedious and time-consuming
+
+Your job is to compute, from a list of expenses, the minimum amount of
+money that must change hands in order to equalize (within one won) all the
+students’ costs
+
+Input
+
+Standard input will contain the information for several trips
+Each trip consists of a line containing a positive integer 𝑛 denoting the number of
+students on the trip
+This is followed by n lines of input, each containing the amount spent by a student
+in 10 won units
+There are no more than 100 students, and no student spent more than 100,000
+won
+A single line containing 0 follows the information for the last trip
+
+Output
+
+For each trip, output a line stating the total amount of money, in won units, that must be
+exchanged to equalize the students’ costs
+
+Example
+Input
+3
+10000
+20000
+30000
+4
+15000
+15010
+3000
+3010
+
+Output
+10000 won
+12000 won
