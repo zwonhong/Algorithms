@@ -111,9 +111,16 @@ void findPath(int n, int size) {
 
     while (i > 0 && j > 0) {
         if (DPTable[i][j] == n) {
-            final[count] = DPTable[i][0];
-            count++;
-            n--;
+            if(count == 0 && DPTable[i][j] == DPTable[i-1][j] + 1) {
+                final[count] = DPTable[i][0];
+                count++;
+                n--;
+            }
+            else if (count != 0) {
+                final[count] = DPTable[i][0];
+                count++;
+                n--;
+            }
         }
         if (i > 1 && DPTable[i][j] == DPTable[i-1][j]) 
             i--;
@@ -130,7 +137,7 @@ int main() {
     int W[MAXSIZE];
     int S[MAXSIZE];
     int num = 0;
-    int n = 4;
+    int n;
     
     while(scanf("%d %d", &W[num], &S[num]) != EOF) num++;
     AscendingSort(W, num);
@@ -146,6 +153,7 @@ int main() {
         }
         printf("\n");
     }
+    
     for(int i = n-1; i >= 0; i--) {
         printf("%d\n", final[i]);
     }
