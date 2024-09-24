@@ -1,0 +1,37 @@
+Lisa collects beautiful pearls and wants to buy jewel boxes to store them
+
+The boxes come in two types:
+Type 1: each such box costs c1 dollars and can hold exactly n1 perals
+Type 2: each such box costs c2 dollars and can hold exactly n2 perals
+
+She wants each box to be filled to its capacity and also to minimize the total cost of buying them
+Help Lisa find the best way to distribute her pearls among the boxes
+
+Input
+
+The input file may contain multiple test cases
+Each test case begins with a line containing the integer n (0<n<1000)
+The second line contains c1 and the third line contains c2 and n2
+Here, c1, c2, n1, and n2 are all positive integers having values smaller than 1000
+A test case containing a zero for the number of pearls terminates the input
+
+Output
+
+To each test case in the input, print a line containing the minimum cost solution
+two nonnegative integers m1 and m2, where mi = number of type i boxes required if one exists
+Otherwise print “failed”
+If a solution exists, you may assume that it is unique
+
+Example
+Input
+43
+1 3
+2 4
+40
+5 9
+5 12
+0
+
+Output
+13 1
+failed

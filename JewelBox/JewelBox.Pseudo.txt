@@ -1,0 +1,9 @@
+cmp (box1.dollar / box1.size) to (box2.dollar / box2.size)
+num = n / highValBox.size
+while (num >= 0)
+	if ((n - highValBox.size * num) % anotherBox.size == 0)
+		highValBox.amount = num;
+		anotherBox.amount = (n - highValBox.size * num) / anotherBox.size
+		finite the loop
+	num--;
+if don't have the value -> print failed
