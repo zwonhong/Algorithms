@@ -1,0 +1,17 @@
+makeDP() {
+	for j <- 1 to n
+		for i <- 0  to m
+			int smallSum = DP[i-1][j-1]
+			// but if i-1 < 0, i-1 = m-1
+			if(DP[i][j-1] < smallSum) smallSum = DP[i][j-1]
+			if(DP[i+1][j-1] < smallSum) smallSum = DP[i+1][j-1]
+			// but if i+1 > m-1, i+1 = 0
+			DP[i][j] = smallSum + matrix[i][j]
+}
+
+findPath() {
+	int i = m-1;
+	for j <- n-1 from 0
+		if(DP[i-1][j-1]==DP[i][j]-matrix[i][j]) store path, i--;
+		else if(DP[i][j-1]==DP[i][j]-matrix[i][j]) store path
+		else store path, i++
