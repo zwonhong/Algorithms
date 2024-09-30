@@ -1,0 +1,3 @@
+CountingMoney(float n)
+	while (n==0)
+		n -= (largest bill less than n)

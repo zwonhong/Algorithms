@@ -1,0 +1,25 @@
+Suppose you want to count out a certain amount of money using the fewest possible bills and coins
+
+For the given US money
+1 cents
+5 cents
+10 cents
+25 cents
+50 cents
+1 dollars
+2 dollars
+5 dollars
+10 dollars
+50 dollars
+100 dollars
+
+Input
+
+6.3
+
+Output
+
+1 of 5 dollars
+1 of 1 dollars
+1 of 25 cents
+1 of 5 cents
