@@ -1,0 +1,17 @@
+FashionableDressmaker(jobs[], n)
+	for i <- 0 to n - 1
+		jobs[i].unit = jobs[i].penalty / jobs[i].time
+	for j <- 0 to n - 1
+		maxIndex = Max(jobs, j, n)
+		if i != maxIndex
+			Swap(jobs[i], jobs[maxIndex])
+			save the result
+
+Max(jobs[], now, n)
+	maxIndex = now
+	maxUnit = jobs[now].unit
+	for i <- now + 1 to n - 1
+		if jobs[i].unit > maxUnit
+			maxUnit = jobs[i].unit
+			maxIndex = i
+	return maxIndex
