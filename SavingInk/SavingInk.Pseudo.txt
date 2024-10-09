@@ -1,0 +1,13 @@
+SavingInk(edge, n)
+	for i <- n to 0
+		read edge[i].x, edge[i].y
+
+	for i <- n to 0
+		visit = Index of Min(distance where isVisit is false)
+		isVisit[visit] = true
+		finalSum += distance[visit]
+
+		for j <- n to 0
+			if isVisit == false
+				dist = sqrt((edge[j].x - edge[visit].x)² + (edge[j].y - edge[visit].y)²))
+				distance[j] = Min(distance[j], dist)
